@@ -1,7 +1,7 @@
 {
 	"name": "@init/file-uploader",
 	"type": "module",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
@@ -10,8 +10,13 @@
 		"import": "./dist/index.js",
 		"require": "./dist/index.cjs"
 	},
-	"files": ["dist"],
-	"keywords": ["bun", "file-uploader"],
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"bun",
+		"file-uploader"
+	],
 	"license": "MIT",
 	"author": "Henry Villavicencio <henry.villavicencio.dev@gmail.com>",
 	"scripts": {
@@ -20,7 +25,7 @@
 		"build": "bun run build.ts",
 		"prepublishOnly": "bun run build",
 		"release": "commit-and-tag-version",
-    "format": "bunx biome format --write ."
+		"format": "bunx biome format --write ."
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
